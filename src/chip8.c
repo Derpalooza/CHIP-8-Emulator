@@ -1,4 +1,6 @@
 #include <time.h>
+#include <stdio.h>
+#include <stdbool.h>
 
 #include "chip8.h"
 #include "opcode.h"
@@ -21,8 +23,6 @@ static const uint8_t s_fontset[] = {
   0xF0, 0x80, 0xF0, 0x80, 0xF0,		// E
   0xF0, 0x80, 0xF0, 0x80, 0x80,		// F
 };
-
-static uint8_t draw_flag;
 
 void chip8_init(Chip8 *chip8) {
 	// Reset main registers

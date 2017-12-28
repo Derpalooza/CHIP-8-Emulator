@@ -1,5 +1,7 @@
 #pragma once
+
 // CHIP-8 Emulator interface
+
 #include <stdint.h>
 #include <stdlib.h>
 

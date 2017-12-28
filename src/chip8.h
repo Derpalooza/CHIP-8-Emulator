@@ -1,4 +1,7 @@
 #pragma once
+// CHIP-8 Emulator interface
+#include <stdint.h>
+#include <stdlib.h>
 
 typedef struct Chip8 {
 	uint16_t opcode;				// Current opcode
@@ -10,6 +13,7 @@ typedef struct Chip8 {
 	uint16_t pc;						// Program counter register
 
 	uint8_t gfx[64][32];		// Graphics buffer
+	uint8_t draw_flag;			// Draw Flag
 
 	uint8_t delay_timer;		// Delay timer
 	uint8_t sound_timer;		// Sound timer
